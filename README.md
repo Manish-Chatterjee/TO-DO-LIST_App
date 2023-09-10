@@ -5,7 +5,7 @@
 <h3 align="center">Frontend Web Developer</h3>
 
 
-Visit my <a href="https://manish-chatterjee.github.io/Portfolio-Website/" target="_blank">Portfolio</a> Website
+Visit my <a href="https://manish-chatterjee.github.io/Portfolio/" target="_blank">Portfolio</a> Website
 <hr />
 
 <h3 align="left">Connect with me:</h3>
