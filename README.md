@@ -1,11 +1,11 @@
 <p style="color:blue;padding:5px;background-color:white;border-radius:5px"> 
 <img align="center" width="100%" src="https://img.freepik.com/premium-vector/amazing-virtual-world-digital-art-graphics-science-technology-future-virtual-reality-glasses-metaverse-colorful-planets-space-fantasy-concept-vector-illustrationgenerative-ai_748571-1002.jpg"/>
 </p>
-<h1 align="center">Hi 👋, I'm Manish Chatterjee</h1>
-<h3 align="center">Frontend Web Developer</h3>
+<h1 align="center">Hi 👋🏻, I'm Manish Chatterjee</h1>
+<h3 align="center">Frontend Web Developer | Graphic Illustrator | 3D Modelling | Prototyping</h3>
+<br />
 
-
-Visit my <a href="https://manish-chatterjee.github.io/Portfolio/" target="_blank">Portfolio</a> Website
+<p align="center">Go and check out my <a href="https://le-portefeuille-9uun.vercel.app/" target="_blank">PORTFOLIO</a> , now..!!</p>
 <hr />
 
 <h3 align="left">Connect with me:</h3>
