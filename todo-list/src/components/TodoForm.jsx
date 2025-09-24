@@ -12,7 +12,7 @@ const TodoForm = ({ addTodo }) => {
   return (
     <div>
       <form className="TodoForm" onSubmit={handleSubmit}>
-        <h1>TO-DO LIST</h1>
+        <h1>IDEA LIST</h1>
         <input
           className="todo-input"
           type="text"
