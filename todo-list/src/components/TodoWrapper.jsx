@@ -6,24 +6,28 @@ import EditTodoForm from "./EditTodoForm";
 uuidv4();
 
 const TodoWrapper = () => {
-  // const [todos, setTodos] = useState([]);/
-  const [todos, setTodos] = useState(() => {
-    const savedTodos = localStorage.getItem("todos");
-    return savedTodos ? JSON.parse(savedTodos) : [];
-  });
+  const [todos, setTodos] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false); // <-- track when we've loaded from storage
+  // const [todos, setTodos] = useState(() => {
+  //   const savedTodos = localStorage.getItem("todos");
+  //   return savedTodos ? JSON.parse(savedTodos) : [];
+  // });
 
   // Load todos from localStorage on mount
-  // useEffect(() => {
-  //   const savedTodos = localStorage.getItem('todos');
-  //   if (savedTodos) {
-  //     setTodos(JSON.parse(savedTodos));
-  //   }
-  // }, []);
-
-  // Save todos to localStorage whenever todos change
   useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
+    const savedTodos = localStorage.getItem("todos");
+    if (savedTodos) {
+      setTodos(JSON.parse(savedTodos));
+    }
+    setIsLoaded(true); // mark as loaded
+  }, []);
+
+  // Save todos to localStorage whenever they change (but only after load)
+  useEffect(() => {
+    if (isLoaded) {
+      localStorage.setItem("todos", JSON.stringify(todos));
+    }
+  }, [todos, isLoaded]);
 
   const addTodo = (todo) => {
     setTodos([

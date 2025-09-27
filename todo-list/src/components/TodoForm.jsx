@@ -19,6 +19,7 @@ const TodoForm = ({ addTodo }) => {
           placeholder="Add Items..."
           value={value}
           onChange={(e) => setValue(e.target.value)}
+          required
         />
         <button className="todo-btn" type="submit">
           Add Task
